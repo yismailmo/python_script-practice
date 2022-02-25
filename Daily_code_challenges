@@ -35,7 +35,7 @@ elif any([unit.lower()=="fahrenheit", unit.lower()=="f"]): #Code block executes 
 else: print("Values or Unit given is invalid!!") #Displays an invalid error message to user upon deviation from accepted values
 
 
-Day 
+Day 4
 Write a Python program to test a list of one hundred integers between 0 and 999, which all differ by ten from one another. Return true or false. 
 
 
@@ -46,3 +46,47 @@ nums = list(range(0, 1000, 10))
 print("Check whether the said list contains one hundred integers between 0 and 999 which all differ by ten from one another:")
 
 print(nums)
+
+Day 5
+
+Write a Python function to find the Max of three numbers.
+ # solution 1
+ def biggest(x,y,z):
+    if x>=y and x>=z:
+        print(x)
+    elif y>x and y>z:
+        print(y)
+    else:
+        print(z)
+        
+ # solution 2
+def maximum(a, b, c):
+    list = [a, b, c]
+    return max(list)
+  
+# Driven code 
+a = 10
+b = 14
+c = 12
+print(maximum(a, b, c))        
+
+Day 6
+Write a Python program to print the even numbers from a given list.
+# solution 1
+# list of numbers
+list1 = [10, 21, 4, 45, 66, 93]
+ 
+# iterating each number in list
+for num in list1:
+    # checking condition
+    if num % 2 == 0:
+        print(num, end=" ")
+       
+# solution 2
+# list of numbers
+list1 = [10, 21, 4, 45, 66, 93]
+ 
+# using list comprehension
+even_nums = [num for num in list1 if num % 2 == 0]
+ 
+print("Even numbers in the list: ", even_nums)
