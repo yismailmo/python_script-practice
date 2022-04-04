@@ -90,3 +90,12 @@ list1 = [10, 21, 4, 45, 66, 93]
 even_nums = [num for num in list1 if num % 2 == 0]
  
 print("Even numbers in the list: ", even_nums)
+
+# Convert number to reversed array of digits
+Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+def digitize(n):
+    return [int(x) for x in str(n)[::-1]]
+Or
+def digitize(n):
+    return map(int, str(n)[::-1])
+    
